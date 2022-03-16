@@ -1,0 +1,93 @@
+/* Practicing Flex CSS */
+* {
+  background-color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+/* Start of Header*/
+.containerHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 20px
+}
+.containerHeader h1 {
+  color: #f9faf8;
+  font-size: 24px;
+  padding-left: 100px;
+}
+
+.containerHeader ul {
+  display: flex;
+  gap: 2em;
+  font-size: 18px;
+  text-decoration: none;
+  padding-right: 100px;
+}
+.containerHeader a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+/* End of Header */
+
+/* Start of Hero */
+.containerHero {
+  display: flex;
+  text-align: center;
+  margin: 100px 75px 0 75px;
+}
+.containerHero article {
+    margin: 0 100px 50px 100px;
+    text-align: left;
+}
+.containerHero h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: bold;
+}
+.containerHero p {
+  font-size: 18px;
+  color: #e5e7eb;
+  margin-bottom: 20px;
+}
+.containerHero button {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  font-weight: bold;
+  min-height: 2em;
+  width: 100px;
+  max-width: 5em;
+  border-radius: 10px;
+}
+.containerHero h2 {
+  background-color: grey;
+  padding: 50px 100px 50px 100px;
+  margin: 30px 100px 50px 0;
+}
+/* End of Hero */
+
+/* Start of Container 1 */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    background-color:#f9faf8;
+    max-width: 100%;
+    padding: 100px;
+}
+.container1 h1 {
+    background-color:#f9faf8;
+    margin: 0 0 100px 25%;
+}
+/* End of Container 1 */
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  button span {
+    display: none;
+  }
+  button {
+    padding: 10px;
+  }
+}
