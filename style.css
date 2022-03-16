@@ -6,27 +6,30 @@
 }
 
 /* Start of Header*/
-.containerHeader {
+.wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-content: center;
   padding: 0;
   margin: 20px;
 }
-.containerHeader h1 {
+.containerHeader {
+  display: flex;
+  justify-content: space-around;
+}
+.wrapper h1 {
   color: #f9faf8;
   font-size: 24px;
-  padding-left: 100px;
 }
 
-.containerHeader ul {
+.wrapper ul {
   display: flex;
   gap: 2em;
   font-size: 18px;
   text-decoration: none;
   padding-right: 100px;
 }
-.containerHeader a {
+.wrapper a {
   text-decoration: none;
   color: #e5e7eb;
 }
@@ -35,12 +38,11 @@
 /* Start of Hero */
 .containerHero {
   display: flex;
-  text-align: center;
-  margin: 100px 75px 0 75px;
+  flex-direction: row;
+  margin: 75px 75px 0 75px;
 }
 .containerHero article {
-  margin: 0 100px 50px 100px;
-  text-align: left;
+  margin: 0 100px 50px 0px;
 }
 .containerHero h1 {
   font-size: 48px;
@@ -122,7 +124,43 @@ div.containerInfo {
 }
 /* End of Container 1 */
 
+/* Start of Container 2 */
+.container2,
+.container2 div {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e7eb;
+  max-width: 100%;
+  min-height: 10em;
+  padding: 10px 100px 10px 100px;
+  justify-content: center;
+}
+.container2 q {
+  background-color: #e5e7eb;
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+  text-align: center;
+}
+.container2 h2 {
+  background-color: #e5e7eb;
+  text-align: end;
+  margin-right: 400px;
+  font-size: 36px;
+}
+/* End of Container 2 */
+
+/* Start of Footer */
+.containerFooter {
+  padding: 15px;
+  text-align: center;
+  color: white;
+}
+/* End of Footer */
+
 /* Media Queries */
+@media only screen and (max-device-width: 480px) {
+}
 @media screen and (max-width: 768px) {
   button span {
     display: none;
