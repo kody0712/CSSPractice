@@ -74,17 +74,23 @@
   flex-direction: column;
   background-color: #f9faf8;
   max-width: 100%;
-  padding: 25px 100px 100px 100px;
+  padding: 25px 100px 50px 100px;
   justify-content: space-evenly;
 }
+div.containerInfo {
+  display: flex;
+  flex-direction: row;
+}
+
 .container1 div {
   background-color: #f9faf8;
 }
 .container1 h1 {
   background-color: #f9faf8;
-  margin: 0 0 50px 13em;
   font-size: 36px;
   font-weight: bolder;
+  margin-left: 500px;
+  padding-bottom: 50px;
 }
 /* Container for Image and Paragraphs Line 42 */
 .containerImages1 {
@@ -98,6 +104,7 @@
   flex-direction: row;
   text-align: center;
   justify-content: space-around;
+  gap: 20px;
 }
 .container1 h3 {
   background-color: #f9faf8;
